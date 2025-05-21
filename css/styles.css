@@ -65,7 +65,15 @@ header{
     display: flex;
 }
 .navbar ul li{
-    margin-right: 1em;
+    margin-right: 1.2em;
+}
+.navbar ul li a:hover{
+    padding: 1em 0;
+    border-bottom: 1px solid;
+    transition: 0.35s ease-in-out;
+    text-align: center;
+    background-color: var(--main-text-color);
+    color: var(--dark-bg);
 }
 
 .navbar .logo{
