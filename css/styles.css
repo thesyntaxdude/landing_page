@@ -165,7 +165,7 @@ header{
     font-style: var(--quote-style);
     font-size: var(--quote-text);
     color: var(--dark-bg);
-    padding: 3em 0;
+    padding: 3em 1em;
  }
 #testimonials blockquote:first-of-type{
     margin-bottom: 1.5em;
@@ -178,3 +178,27 @@ header{
 }
 
 /*Call To Action, CTA*/
+
+#cta{
+    color: var(--main-text-color);
+    padding: 5em 0;
+}
+#cta .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent-color);
+    padding: 3em 1.5em;
+    border-radius: 12px;
+}
+#cta .cta-text{
+    max-width: 60%;
+}
+#cta .btn{
+    border: 2px solid var(--main-text-color);
+    display: flex;
+    align-items: center;
+    height: 2em;
+}
+
+/*Footer Section*/
