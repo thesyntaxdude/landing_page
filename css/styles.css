@@ -159,3 +159,22 @@ header{
 
 /*testimonials*/
 
+#testimonials{
+    background-color: var(--quote-bg);
+    font-weight: var(--quote-weight);
+    font-style: var(--quote-style);
+    font-size: var(--quote-text);
+    color: var(--dark-bg);
+    padding: 3em 0;
+ }
+#testimonials blockquote:first-of-type{
+    margin-bottom: 1.5em;
+}
+#testimonials blockquote span{
+    font-size: 1.8rem;
+    display: block;
+    text-align: right;
+    font-weight: var(--main-weight);
+}
+
+/*Call To Action, CTA*/
