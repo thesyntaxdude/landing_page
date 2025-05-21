@@ -21,7 +21,7 @@
     margin: 0;
     padding: 0;
 }
-img{
+img, i{
     display: block;
     max-width: 100%;
 }
@@ -125,3 +125,37 @@ header{
         opacity: 0.8;
     }
 }
+
+/*features*/
+#features{
+    padding: 3em;
+}
+#features .wrapper h2{
+    text-align: center;
+    color: var(--dark-bg);
+    font-size: var(--info-text);
+    padding-bottom: 1em;
+}
+.feature_grid{
+    display: flex;
+    justify-content: space-evenly;
+}
+#features .feature_item{
+    max-width: 30%;
+    background-color: var(--quote-bg);
+    border-radius: 8px;
+    padding: 0.5em;
+    text-align: center;
+    text-wrap: balance;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#features .feature_item i, #features .feature_item p{
+    margin: 0.2em;
+    color: var(--dark-bg);
+}
+
+/*testimonials*/
+
