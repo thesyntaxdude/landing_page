@@ -44,7 +44,6 @@ body{
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
-    border: 1px solid red;
     border-bottom: none;
     border-top: none;
 }
@@ -65,7 +64,10 @@ header{
     display: flex;
 }
 .navbar ul li{
-    margin-right: 1.2em;
+    margin-left: 4.5em;
+}
+.navbar ul li:first-child{
+    margin-left: 0;
 }
 .navbar ul li a:hover{
     padding: 1em 0;
@@ -202,3 +204,10 @@ header{
 }
 
 /*Footer Section*/
+
+footer{
+    background-color: var(--dark-bg);
+    padding: 2em;
+    color: var(--main-text-color);
+    text-align: center;
+}
