@@ -41,11 +41,14 @@ body{
 }
 
 .wrapper{
-    max-width: 80%;
+    width: 90%;
+    max-width: 1100px;
     margin: 0 auto;
     border: 1px solid red;
+    border-bottom: none;
+    border-top: none;
 }
-
+/*Navigation*/
 header{
     background: var(--dark-bg);
     color: var(--main-text-color);
@@ -68,4 +71,49 @@ header{
 .navbar .logo{
     font-size: var(--logo-text);
     font-weight: var(--main-weight);
+}
+
+/*Hero*/
+#hero{
+    background-color: var(--dark-bg);
+    padding: 4em 0 8em;
+}
+.hero_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero_text{
+    max-width: 50%;
+    color: var(--sec-color);
+}
+.hero_text h1{
+    color: var(--main-text-color);
+    font-weight: var(--main-weight);
+    font-size: var(--main-size);
+}
+.hero_text p{
+    font-size: var(--sec-text);
+    margin: 0.5em 0 1em;
+    line-height: 1.8m;
+}
+.hero_text .bold{
+    font-weight: var(--main-weight);
+    border-bottom: 2px dashed;
+}
+.hero_container img{
+    height: 30em;
+}
+.btn{
+    display: inline-block;
+    background-color: var(--accent-color);
+    padding: 0.5em 1.5em;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: var(--main-weight);
+    font-size: var(--sec-text);
+    
+    &:hover{
+        opacity: 0.8;
+    }
 }
