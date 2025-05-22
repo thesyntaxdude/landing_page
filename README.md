@@ -18,7 +18,7 @@ Build a landing page based on a preview.
 - I need to learn JS quick so I can build one of those 'fancy' hamburger menus on my mobile and tablet versions.
 - I've come a long way and should find a way to stop feeling like I'm not cut out for this.
 
-##Got any suggestions?
+### Got any suggestions?
 Reach out to me:
 
 - [linkedin]
