@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root {
     --font: Roboto;
     --dark-bg: #1f2937;
     --main-text-color: #f9faf8;
@@ -16,60 +16,72 @@
     --quote-weight: light;
     --quote-style: italic;
 }
-* , ::before, ::after{
+
+*,
+::before,
+::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-img, i{
+
+img,
+i {
     display: block;
     max-width: 100%;
 }
-a{
+
+a {
     color: inherit;
     text-decoration: none;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
-html{
+html {
     font-size: 16px;
 }
-body{
+
+body {
     font-family: var(--font);
 }
 
-.wrapper{
+.wrapper {
     width: 90%;
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     border-bottom: none;
     border-top: none;
 }
+
 /*Navigation*/
-header{
+header {
     background: var(--dark-bg);
     color: var(--main-text-color);
 }
 
-
-.navbar{
+.navbar {
     height: 4em;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.navbar ul{
+
+.navbar ul {
     display: flex;
 }
-.navbar ul li{
+
+.navbar ul li {
     margin-left: 4.5em;
 }
-.navbar ul li:first-child{
+
+.navbar ul li:first-child {
     margin-left: 0;
 }
-.navbar ul li a:hover{
+
+.navbar ul li a:hover {
     padding: 1em 0;
     border-bottom: 1px solid;
     transition: 0.35s ease-in-out;
@@ -78,43 +90,51 @@ header{
     color: var(--dark-bg);
 }
 
-.navbar .logo{
+.navbar .logo {
     font-size: var(--logo-text);
     font-weight: var(--main-weight);
 }
 
 /*Hero*/
-#hero{
+#hero {
     background-color: var(--dark-bg);
     padding: 4em 0 8em;
 }
-.hero_container{
+
+.hero_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2em;
 }
-.hero_text{
+
+.hero_text {
     max-width: 50%;
     color: var(--sec-color);
 }
-.hero_text h1{
+
+.hero_text h1 {
     color: var(--main-text-color);
     font-weight: var(--main-weight);
     font-size: var(--main-size);
 }
-.hero_text p{
+
+.hero_text p {
     font-size: var(--sec-text);
     margin: 0.5em 0 1em;
-    line-height: 1.8m;
+    line-height: 1.8em;
 }
-.hero_text .bold{
+
+.hero_text .bold {
     font-weight: var(--main-weight);
     border-bottom: 2px dashed;
 }
-.hero_container img{
+
+.hero_container img {
     height: 30em;
 }
-.btn{
+
+.btn {
     display: inline-block;
     background-color: var(--accent-color);
     padding: 0.5em 1.5em;
@@ -122,57 +142,65 @@ header{
     border-radius: 8px;
     font-weight: var(--main-weight);
     font-size: var(--sec-text);
-    
-    &:hover{
+
+    &:hover {
         opacity: 0.8;
     }
 }
 
+
+
 /*features*/
-#features{
+#features {
     padding: 3em;
 }
-#features .wrapper h2{
+
+#features .wrapper h2 {
     text-align: center;
     color: var(--dark-bg);
     font-size: var(--info-text);
     padding-bottom: 1em;
 }
-.feature_grid{
+
+.feature_grid {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2em;
 }
-#features .feature_item{
-    max-width: 30%;
+
+#features .feature_item {
+    flex: 1 1 250px;
     background-color: var(--quote-bg);
     border-radius: 8px;
-    padding: 0.5em;
+    padding: 1em;
     text-align: center;
-    text-wrap: balance;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#features .feature_item i, #features .feature_item p{
+#features .feature_item i,
+#features .feature_item p {
     margin: 0.2em;
     color: var(--dark-bg);
 }
 
 /*testimonials*/
-
-#testimonials{
+#testimonials {
     background-color: var(--quote-bg);
     font-weight: var(--quote-weight);
     font-style: var(--quote-style);
     font-size: var(--quote-text);
     color: var(--dark-bg);
     padding: 3em 1em;
- }
-#testimonials blockquote:first-of-type{
+}
+
+#testimonials blockquote:first-of-type {
     margin-bottom: 1.5em;
 }
-#testimonials blockquote span{
+
+#testimonials blockquote span {
     font-size: 1.8rem;
     display: block;
     text-align: right;
@@ -180,23 +208,27 @@ header{
 }
 
 /*Call To Action, CTA*/
-
-#cta{
+#cta {
     color: var(--main-text-color);
     padding: 5em 0;
 }
-#cta .wrapper{
+
+#cta .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--accent-color);
     padding: 3em 1.5em;
     border-radius: 12px;
+    gap: 2em;
+    flex-wrap: wrap;
 }
-#cta .cta-text{
-    max-width: 60%;
+
+#cta .cta-text {
+    flex: 1 1 300px;
 }
-#cta .btn{
+
+#cta .btn {
     border: 2px solid var(--main-text-color);
     display: flex;
     align-items: center;
@@ -204,10 +236,108 @@ header{
 }
 
 /*Footer Section*/
-
-footer{
+footer {
     background-color: var(--dark-bg);
     padding: 2em;
     color: var(--main-text-color);
     text-align: center;
+}
+
+/* Tablet */
+@media screen and (max-width: 813px) {
+    :root {
+        --main-size: 2.5rem;
+        --sec-text: 1rem;
+        --info-text: 2rem;
+        --quote-text: 2rem;
+    }
+
+    .hero_container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero_text {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .hero_container img {
+        height: auto;
+        max-height: 400px;
+    }
+
+    .navbar ul {
+        gap: 2em;
+    }
+
+
+    #cta .wrapper {
+        font-size: 0.9rem;
+        padding: 2em;
+    }
+
+    #cta .wrapper .cta-text p {
+        margin-top: 1em;
+    }
+
+    .feature_grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    :root {
+        --main-size: 2rem;
+        --sec-text: 0.9rem;
+        --info-text: 1.5rem;
+        --quote-text: 1.5rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 1em 0;
+    }
+
+    #hero img {
+        display: none;
+    }
+
+    .hero_text h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5em 1em;
+    }
+
+    .feature_item i {
+        font-size: 3em !important;
+    }
+
+    #cta .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 542px) {
+    .navbar ul {
+        display: none;
+
+    }
+
+}
+@media screen and (min-width: 543px) and (max-width: 813px){
+    .navbar ul li{
+        margin-left: 1em
+    }
 }
